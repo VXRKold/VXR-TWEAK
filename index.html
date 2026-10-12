@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VXR Tweaks: straightforward PC and Fortnite performance tips.">
+  <title>VXR Tweaks | PC Performance</title>
+  <style>
+    :root { color-scheme: dark; --bg:#090909; --panel:#151515; --red:#ff3434; --muted:#b8b8b8; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:#f6f6f6; line-height:1.6; }
+    a { color:inherit; }
+    header { padding:22px max(6vw,20px); display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #292929; }
+    .brand { font-weight:900; letter-spacing:1px; font-size:1.2rem; }
+    .brand span, .accent { color:var(--red); }
+    nav { display:flex; gap:20px; flex-wrap:wrap; }
+    nav a { color:#ddd; text-decoration:none; font-size:.95rem; }
+    nav a:hover { color:var(--red); }
+    .hero { padding:88px 20px 76px; text-align:center; background:radial-gradient(ellipse at top, #321010 0%, #090909 60%); }
+    .eyebrow { color:var(--red); text-transform:uppercase; letter-spacing:3px; font-size:.8rem; font-weight:800; }
+    h1 { font-size:clamp(2.5rem,7vw,5rem); line-height:1.03; margin:14px auto; max-width:850px; }
+    .hero p { color:var(--muted); max-width:650px; margin:20px auto 28px; }
+    .button { display:inline-block; background:var(--red); color:white; text-decoration:none; font-weight:800; padding:12px 20px; border-radius:8px; }
+    .button.secondary { background:#242424; border:1px solid #444; margin-left:8px; }
+    main { max-width:1080px; margin:auto; padding:54px 20px; }
+    h2 { font-size:2rem; margin:0 0 10px; }
+    .intro { color:var(--muted); margin-top:0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin-top:24px; }
+    .card { background:var(--panel); border:1px solid #292929; padding:22px; border-radius:14px; }
+    .card .number { color:var(--red); font-weight:900; font-size:.85rem; }
+    .card h3 { margin:8px 0; }
+    .card p, li { color:var(--muted); }
+    .notice { border-left:4px solid var(--red); background:#1b1111; padding:16px 18px; border-radius:8px; margin-top:24px; }
+    .steps { padding-left:22px; }
+    footer { border-top:1px solid #292929; padding:26px 20px; text-align:center; color:#999; font-size:.9rem; }
+    @media(max-width:600px) { header { align-items:flex-start; gap:12px; flex-direction:column; } .hero { padding-top:60px; } .button.secondary { margin:10px 0 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">VXR <span>TWEAKS</span></div>
+    <nav aria-label="Main navigation">
+      <a href="#tips">Performance tips</a>
+      <a href="#setup">Setup guide</a>
+      <a href="#safety">Safety</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">Play smoother. Tweak smarter.</div>
+    <h1>Get more from your <span class="accent">setup.</span></h1>
+    <p>Simple, careful PC and Fortnite performance tips. No miracle promises, mystery downloads, or risky “one-click” fixes.</p>
+    <a class="button" href="#tips">Explore tips</a>
+    <a class="button secondary" href="#safety">Stay safe</a>
+  </section>
+  <main>
+    <section id="tips">
+      <h2>Performance basics</h2>
+      <p class="intro">Start with reversible settings before trying unknown optimizer tools.</p>
+      <div class="grid">
+        <article class="card"><div class="number">01 / WINDOWS</div><h3>Update your drivers</h3><p>Get graphics drivers from your GPU maker or PC manufacturer. Avoid random driver download sites.</p></article>
+        <article class="card"><div class="number">02 / FORTNITE</div><h3>Check video settings</h3><p>Try Performance Mode, lower demanding graphics settings, and restart the game after major changes.</p></article>
+        <article class="card"><div class="number">03 / SYSTEM</div><h3>Close background apps</h3><p>Close apps you don't need while playing. Keep security software enabled.</p></article>
+        <article class="card"><div class="number">04 / TESTING</div><h3>Measure your FPS</h3><p>Compare the same map and settings before and after a change. Track average FPS and stutters, not just one peak number.</p></article>
+      </div>
+    </section>
+    <section id="setup" style="margin-top:56px">
+      <h2>Safe setup checklist</h2>
+      <ol class="steps">
+        <li>Create a restore point before changing Windows settings.</li>
+        <li>Change one setting at a time so you can undo problems.</li>
+        <li>Keep a note of the original setting and your FPS before each test.</li>
+        <li>Restart and test in the same game mode for a fair comparison.</li>
+      </ol>
+    </section>
+    <section id="safety" style="margin-top:44px">
+      <h2>Download safety</h2>
+      <div class="notice"><strong>Be careful with .BAT, .REG, and .EXE files.</strong><br>They can change your PC. Don't run unknown files as administrator or disable Windows Defender to install a tweak. A clean antivirus scan is useful, but it cannot guarantee a file is safe.</div>
+      <p class="intro" style="margin-top:18px">This starter site does not include executable downloads. Add only files you've reviewed and can explain, with clear instructions and rollback steps.</p>
+    </section>
+  </main>
+  <footer>© 2026 VXR Tweaks · Community-made tips. No guaranteed FPS gains.</footer>
+</body>
+</html>
